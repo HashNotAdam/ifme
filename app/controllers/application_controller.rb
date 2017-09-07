@@ -19,6 +19,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :null_session, if: proc { |c| c.request.format == 'application/json' }
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :if_not_signed_in, unless: :devise_controller?
+  load_and_authorize_resource
 
   # i18n
   before_action :set_locale

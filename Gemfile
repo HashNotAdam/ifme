@@ -8,6 +8,7 @@ gem 'rails', '~> 5.0.5'
 
 gem 'activerecord-import'
 gem 'bcrypt', '3.1.11'
+gem 'cancancan', '~> 2.0'
 gem 'devise', '~> 4.3'
 gem 'devise_invitable'
 gem 'devise_uid'
